@@ -51,7 +51,13 @@ The system is built entirely in C++ and leverages various components of the C++ 
 
 The application presents a command-line interface. Follow the prompts in the main menu to perform various library management tasks. Input is validated to ensure data integrity.
 
- 
+ ## Data Persistence
+
+The system automatically manages data through files:
+-   `library_data.txt`: Stores the main library collection. This file is created/updated automatically on program exit and loaded on startup.
+-   `library_backup.txt`: A safety backup created automatically when clearing the entire library.
+-   CSV export functionality allows saving data to a user-specified `.csv` file.
+
 ## Author
 
 -   **10xRashed** - Data Structures Lab Project
